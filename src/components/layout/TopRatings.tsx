@@ -5,7 +5,7 @@ const TopRatings = () => {
       {
         image: "/vertical.png",
         name: "VERTICAL STRIPED SHIRT",
-        stars: [<FaStar />, <FaStar />, <FaStar />, <FaStar />, <FaStar />],
+        stars: [<FaStar key={"star1"} />, <FaStar key={"star2"} />, <FaStar key={"star3"} />, <FaStar key={"star4"} />, <FaStar key={"star5"} />],
         rating: 5.0,
         price: "$212",
         oldPrice: "$232",
@@ -14,7 +14,7 @@ const TopRatings = () => {
       {
         image: "/courage.png",
         name: "COURAGE GRAPHIC T-SHIRT",
-        stars: [<FaStar />, <FaStar />, <FaStar />, <FaStar />, <FaStar />],
+        stars: [<FaStar key={"star1"} />, <FaStar key={"star2"} />, <FaStar key={"star3"} />, <FaStar key={"star4"} />, <FaStar key={"star5"} />],
         rating: 4.0,
         price: "$145",
         oldPrice: null,
@@ -23,8 +23,8 @@ const TopRatings = () => {
       {
         image: "/loose.png",
         name: "LOOSE FIT BERMUDA SHORTS",
-        stars: [<FaStar />, <FaStar />, <FaStar />],
-        rating: 3.0,
+        stars: [<FaStar key={"star1"} />, <FaStar key={"star2"} />, <FaStar key={"star3"} />],
+        rating : 3.0,
         price: "$80",
         oldPrice: null,
         discount: null,
@@ -32,7 +32,7 @@ const TopRatings = () => {
       {
         image: "/sleeve.png",
         name: "FADED SKINNY JEANS",
-        stars: [<FaStar />, <FaStar />, <FaStar />, <FaStar />, <FaStarHalf />],
+        stars: [<FaStar key={"star1"} />, <FaStar key={"star2"} />, <FaStar key={"star3"} />, <FaStar key={"star4"} />, <FaStarHalf key={"star5"} />],
         rating: 4.5,
         price: "$210",
         oldPrice: null,

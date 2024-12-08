@@ -7,7 +7,7 @@ const NewArrivals = () => {
     {
       image: "/t-shirt.png",
       name: "T-shirt with Tape Details",
-      stars: [<FaStar />, <FaStar />, <FaStar />, <FaStar />, <FaStarHalf />],
+      stars: [<FaStar key={"star1"} />, <FaStar key={"star2"} />, <FaStar key={"star3"} />, <FaStar key={"star4"} />, <FaStarHalf key={"star5"} />],
       rating: 4.5,
       price: "$120",
       oldPrice: null,
@@ -16,7 +16,7 @@ const NewArrivals = () => {
     {
       image: "/skinny.png",
       name: "Skinny Fit Jeans",
-      stars: [<FaStar />, <FaStar />, <FaStar />, <FaStar />, <FaStarHalf />],
+      stars: [<FaStar key={"star1"} />, <FaStar key={"star2"} />, <FaStar key={"star3"} />, <FaStar key={"star4"} />, <FaStarHalf key={"star5"} />],
       rating: 3.5,
       price: "$240",
       oldPrice: "$260",
@@ -25,7 +25,7 @@ const NewArrivals = () => {
     {
       image: "/checkered.png",
       name: "Checkered Shirt",
-      stars: [<FaStar />, <FaStar />, <FaStar />, <FaStar />, <FaStarHalf />],
+      stars: [<FaStar key={"star1"} />, <FaStar key={"star2"} />, <FaStar key={"star3"} />, <FaStar key={"star4"} />, <FaStarHalf key={"star5"} />],
       rating: 4.8,
       price: "$180",
       oldPrice: null,
@@ -34,7 +34,7 @@ const NewArrivals = () => {
     {
       image: "/sleeve.png",
       name: "Sleeve Striped T-shirt",
-      stars: [<FaStar />, <FaStar />, <FaStar />, <FaStar />, <FaStarHalf />],
+      stars: [<FaStar key={"star1"} />, <FaStar key={"star2"} />, <FaStar key={"star3"} />, <FaStar key={"star4"} />, <FaStarHalf key={"star5"} />],
       rating: 4.5,
       price: "$130",
       oldPrice: "$140",
