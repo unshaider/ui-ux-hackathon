@@ -1,18 +1,18 @@
 import Image from "next/image";
 const BrowseByDressStyle: React.FC = () => {
   return (
-    <section className="bg-primary py-8 px-4 w-[90%] h-[866px] rounded-3xl mx-auto">
-      <div className="max-w-6xl mx-auto text-center">
+    <section className="bg-primary py-8 w-[90%] rounded-3xl mx-auto px-5 md:px-[50px]">
+      <div className="mx-auto text-center">
         <h1 className="text-5xl font-bold my-[64px]">BROWSE BY DRESS STYLE</h1>
         <div className="grid grid-cols-12 gap-6">
           {/* Casual Card */}
-          <div className="relative bg-white rounded-xl shadow-md overflow-hidden h-[289px] col-span-4">
+          <div className="relative bg-white rounded-xl shadow-md overflow-hidden col-span-12 md:col-span-4">
             <Image
               src={"/casual.png"}
               alt={"Casual"}
               width={407}
               height={289}
-              className="object-cover h-full"
+              className="object-cover w-full h-full"
             />
             <div className="absolute flex top-[25px] left-9">
               <span className="text-black text-4xl font-bold">Casual</span>
@@ -20,9 +20,9 @@ const BrowseByDressStyle: React.FC = () => {
           </div>
 
           {/* Formal Card */}
-          <div className="relative bg-white rounded-xl shadow-md overflow-hidden h-[289px] col-span-8">
+          <div className="relative bg-white rounded-xl shadow-md overflow-hidden md:col-span-8 col-span-12">
             <Image
-              src={"/formal.png"} 
+              src={"/formal.png"}
               alt="Formal"
               width={684}
               height={289}
@@ -34,9 +34,9 @@ const BrowseByDressStyle: React.FC = () => {
           </div>
 
           {/* Party Card */}
-          <div className="relative bg-white rounded-xl shadow-md overflow-hidden h-[289px] col-span-8">
+          <div className="relative bg-white rounded-xl shadow-md overflow-hidden md:col-span-8 col-span-12">
             <Image
-              src={"/party.png"} 
+              src={"/party.png"}
               alt="Party"
               width={684}
               height={289}
@@ -48,9 +48,9 @@ const BrowseByDressStyle: React.FC = () => {
           </div>
 
           {/* Gym Card */}
-          <div className="relative bg-white rounded-xl shadow-md overflow-hidden h-[289px] col-span-4">
+          <div className="relative bg-white rounded-xl shadow-md overflow-hidden  md:col-span-4 col-span-12">
             <Image
-              src={"/gym.png"} 
+              src={"/gym.png"}
               alt="Gym"
               width={407}
               height={289}

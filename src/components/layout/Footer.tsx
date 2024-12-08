@@ -5,7 +5,7 @@ import NewsLetterSection from "./NewsLetterSection";
 const Footer = () => {
   return (
     <footer className="bg-primary px-5 md:px-[50px] h-[499px]">
-        <NewsLetterSection />
+      <NewsLetterSection />
 
       <div className="mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
         <div className="w-64 flex-shrink-0 mx-auto text-center md:text-left">
@@ -138,11 +138,21 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex gap-3">
-            <Image src={"/visa.png"} alt="Visa" width={46} height={30} />
-            <Image src={"/master-card.png"} alt="Master Card" width={46} height={30} />
-            <Image src={"/paypal.png"} alt="PayPal" width={46} height={30} />
-            <Image src={"/apple-pay.png"} alt="Apple Pay" width={46} height={30} />
-            <Image src={"/gpay.png"} alt="Google Pay" width={46} height={30} />
+          <Image src={"/visa.png"} alt="Visa" width={46} height={30} />
+          <Image
+            src={"/master-card.png"}
+            alt="Master Card"
+            width={46}
+            height={30}
+          />
+          <Image src={"/paypal.png"} alt="PayPal" width={46} height={30} />
+          <Image
+            src={"/apple-pay.png"}
+            alt="Apple Pay"
+            width={46}
+            height={30}
+          />
+          <Image src={"/gpay.png"} alt="Google Pay" width={46} height={30} />
         </div>
       </div>
     </footer>

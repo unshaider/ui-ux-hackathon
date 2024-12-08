@@ -15,7 +15,8 @@ const Header2 = () => {
       </div>
       <nav className="hidden md:block items-center gap-6">
         <Link href={"/"} className="mr-6">
-          Shop
+          <label htmlFor="Shop">Shop</label>
+          <select name="Shop">Shop</select>
         </Link>
         <Link href={"/"} className="mr-6">
           On Sale
@@ -37,7 +38,7 @@ const Header2 = () => {
           />
         </div>
       </div>
-      <div className="flex gap-[14px]">
+      <div className="flex gap-2 md:gap-[14px]">
         <IoSearch className="w-6 h-6 block md:hidden" />
         <IoCartOutline className="w-6 h-6" />
         <CgProfile className="w-6 h-6" />

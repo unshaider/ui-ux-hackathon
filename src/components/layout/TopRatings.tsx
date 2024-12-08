@@ -60,7 +60,7 @@ const TopRatings = () => {
     <section className="py-10 px-5 md:px-[50px] mb-3">
       {/* Heading */}
       <h2 className="text-center text-5xl font-bold text-black mb-8">
-      TOP SELLING
+        TOP SELLING
       </h2>
 
       {/* Product Cards */}

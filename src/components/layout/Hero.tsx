@@ -1,8 +1,8 @@
-import Image from "next/image"
+import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="px-5 md:px-[50px] h-[663px] relative flex items-center justify-between bg-main p-8">
+    <section className="px-8 md:px-[50px] relative flex flex-col md:mt-0 pt-10 md:flex-row items-center justify-center md:justify-between bg-main">
       {/* Text Section */}
       <div className="max-w-[545px]">
         <h1 className="text-[54px] font-bold text-black mb-4">
@@ -13,15 +13,23 @@ const Hero = () => {
           designed to bring out your individuality and cater to your sense of
           style.
         </p>
-        <button className='rounded-full bg-black text-white px-[54px] py-4 hover:bg-gray-800'>Shop Now</button>
+        <button className="w-full md:w-[210px] rounded-full bg-black text-white px-[54px] py-4 hover:bg-gray-800">
+          Shop Now
+        </button>
       </div>
 
       {/* Image Section */}
-      <div className="w-1/2">
-      <Image src={"/hero-section.png"} alt={"Stylish clothing"} width={500} height={500} className="w-full object-cover" />
+      <div className="w-1/2 mt-10 md:mt-0">
+        <Image
+          src={"/hero-section.png"}
+          alt={"Stylish clothing"}
+          width={500}
+          height={500}
+          className="w-full object-cover"
+        />
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
