@@ -64,7 +64,7 @@ const NewArrivals = () => {
       </h2>
 
       {/* Product Cards */}
-      <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1">
+      <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-8">
         {products.map((product, index) => (
           <div
             key={index}
