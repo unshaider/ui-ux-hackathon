@@ -1,7 +1,7 @@
 import Image from "next/image";
 const BrowseByDressStyle: React.FC = () => {
   return (
-    <section className="bg-primary py-8 w-[90%] rounded-3xl mx-auto px-5 md:px-[50px]">
+    <section className="bg-main2 py-8 w-[90%] rounded-3xl mx-auto px-5 md:px-[50px]">
       <div className="mx-auto text-center">
         <h1 className="text-5xl font-bold my-[64px]">BROWSE BY DRESS STYLE</h1>
         <div className="grid grid-cols-12 gap-6">

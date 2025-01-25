@@ -1,29 +1,32 @@
 import { BsEnvelope } from "react-icons/bs";
+import { Input } from "../ui/input";
+import { Button } from "../ui/button";
 
 const NewsLetterSection = () => {
   return (
-    <section className="relative bottom-20">
+    <section className="relative bottom-20 mx-auto">
       {/* Newsletter Section */}
-      <div className="bg-black text-white py-6 mt-12 rounded-xl flex flex-col md:flex-row justify-between items-center px-14">
-        <h1 className="text-[40px] text-center font-bold w-[297px] md:w-[551px]">
+      <div className="bg-black text-white mt-12 rounded-xl flex flex-col sm:flex-row justify-between items-center px-16 py-9">
+        <h1 className="text-[32px] sm:text-[40px] font-bold w-[297px] lg:w-[551px]">
           STAY UPTO DATE ABOUT OUR LATEST OFFERS
         </h1>
-        <div>
-          <div className="bg-white h-12 rounded-full px-4 mx-auto">
-            <div className="flex items-center gap-3">
-              <BsEnvelope className="w-6 h-6 text-black" />
-              <input
-                type="email"
-                placeholder="Enter your email address"
-                className="w-full bg-whitw h-12"
-              />
-            </div>
+        <div className="mt-5 sm:mt-0">
+          <div className="relative w-[311px] sm:w-[349px]">
+            <BsEnvelope className="absolute left-4 top-3.5 h-5 w-5 text-gray-500" />
+            <Input
+              type="email"
+              placeholder="Enter your email address"
+              className="pl-12 rounded-full bg-white h-12 text-black"
+            />
           </div>
 
           <br />
-          <button className="bg-white text-black h-12 w-[270px] md:w-[349px] font-semibold rounded-full">
+          <Button
+            type="submit"
+            className="bg-white text-black h-12 font-semibold rounded-full hover:bg-gray-200 w-[311px] sm:w-[349px]"
+          >
             Subscribe to Newsletter
-          </button>
+          </Button>
         </div>
       </div>
     </section>

@@ -4,7 +4,7 @@ import NewsLetterSection from "./NewsLetterSection";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary px-5 md:px-[50px] h-[499px]">
+    <footer className="bg-main px-5 md:px-[50px] h-[499px]">
       <NewsLetterSection />
 
       <div className="mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
@@ -131,30 +131,46 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex justify-between bg-primary my-24">
-        <div className="flex flex-col sm:flex-row">
-          <p className="text-gray-500 text-sm text-center sm:text-left">
-            Shop.co © 2000-2023, All Rights Reserved
-          </p>
+      {/* Footer Bottom */}
+      <div className="pt-8 border-t border-gray-200">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p className="text-sm text-gray-600">
+              Shopco © 2000-2023. All Rights Reserved.
+            </p>
+            <div className="flex items-center space-x-4">
+              <div className="rounded-md bg-white w-[46px] h-[30px] flex items-center justify-center">
+                <Image src="/visa.png" alt="Visa" width={32} height={10} />
+              </div>
+              <div className="rounded-md bg-white w-[46px] h-[30px] flex items-center justify-center">
+                <Image
+                  src="/master-card.png"
+                  alt="Mastercard"
+                  width={25}
+                  height={15}
+                />
+              </div>
+              <div className="rounded-md bg-white w-[46px] h-[30px] flex items-center justify-center">
+                <Image src="/paypal.png" alt="PayPal" height={9} width={34} />
+              </div>
+              <div className="rounded-md bg-white w-[46px] h-[30px] flex items-center justify-center">
+                <Image
+                  src="/apple-pay.png"
+                  alt="Apple Pay"
+                  width={26}
+                  height={11}
+                />
+              </div>
+              <div className="rounded-md bg-white w-[46px] h-[30px] flex items-center justify-center">
+                <Image
+                  src="/gpay.png"
+                  alt="Google Pay"
+                  width={28}
+                  height={11}
+                />
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="flex gap-3">
-          <Image src={"/visa.png"} alt="Visa" width={46} height={30} />
-          <Image
-            src={"/master-card.png"}
-            alt="Master Card"
-            width={46}
-            height={30}
-          />
-          <Image src={"/paypal.png"} alt="PayPal" width={46} height={30} />
-          <Image
-            src={"/apple-pay.png"}
-            alt="Apple Pay"
-            width={46}
-            height={30}
-          />
-          <Image src={"/gpay.png"} alt="Google Pay" width={46} height={30} />
-        </div>
-      </div>
     </footer>
   );
 };
